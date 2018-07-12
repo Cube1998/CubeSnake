@@ -25,7 +25,7 @@ public:
 
 private:
     //蛇身队列
-    vector<snake_node* > Body ;
+    vector<snake_node*> Body;
     //蛇身颜色
     int Body_Color = RED;
     //蛇头移动方向
@@ -37,14 +37,14 @@ private:
 
 };
 /*
-Snake::Snake(int Dir)
+Snake::Snake(int Dir )
 {
-    //snake_node* head = new snake_node(5,5,BLACK,NULL);
-    //this->Body.push_back(head);
-  // this->Body_Color = RED;
+    snake_node* head = new snake_node(5,5,BLACK,NULL);
+    this->Body.push_back(head);
+    this->Body_Color = RED;
     this->Direction = Dir;
 }
-/*
+
 void Snake::move(){
 
     vector<snake_node*>::iterator it = Body.begin();

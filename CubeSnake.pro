@@ -25,11 +25,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     snake.cpp
 
 HEADERS += \
-        mainwindow.h \
     snake.h \
     snakenode.h
 
