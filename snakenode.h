@@ -5,10 +5,8 @@
 #include <stdio.h>
 #include <queue>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
+
+
 //QtLibrary
 #include <QPoint>
 //Color
@@ -17,6 +15,10 @@
 #define RED   2
 #define YELLOW 3
 #define GREEN 4
+
+//Map
+#define MAX_M 30
+#define MAX_N 40
 
 //DIRECTION
 #define UP 0
