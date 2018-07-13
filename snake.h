@@ -2,6 +2,7 @@
 #define SNAKE_H
 #include <vector>
 #include "snakenode.h"
+#include <QDebug>
 using namespace std;
 
 class Snake
@@ -17,8 +18,10 @@ public:
 
     //Added Node
     void addNode(int xx,int yy){
-         snake_node* tmp = new snake_node(xx,yy,Body_Color,(*Body.end()));
+         snake_node* tmp = new snake_node(xx,yy,Body_Color,(*(Body.end()-1)));
          this->Body.push_back(tmp);
+         qDebug()<<*tmp;
+         qDebug()<<"Added";
     }
 
     //转换方向
@@ -26,12 +29,14 @@ public:
 
 
 
+    //蛇身队列
+    vector<snake_node* > Body ;
+
 
 
 
 private:
-    //蛇身队列
-    vector<snake_node* > Body ;
+
     //蛇身颜色
     int Body_Color = RED;
     //蛇头移动方向
@@ -45,7 +50,8 @@ private:
 
 Snake::Snake(int Dir)
 {
-    snake_node* head = new snake_node(5,5,BLACK,NULL);
+    srand((unsigned)time(NULL));
+    snake_node* head = new snake_node(rand()%MAX_M,rand()%MAX_N,BLACK,NULL);
     this->Body.push_back(head);
     this->Body_Color = RED;
     this->Direction = Dir;
@@ -72,7 +78,7 @@ void Snake::print(int map[MAX_M][MAX_N]){
 
     for(;it!=Body.end();it++)
     {
-        map[(*it)->getTransferedX()][(*it)->getTransferedY()] = BLACK;
+        map[(*it)->getTransferedX()][(*it)->getTransferedY()] = (*it)->getColorGroup();
 
     }
 }

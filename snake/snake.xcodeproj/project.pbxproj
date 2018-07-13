@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45D40D2B20F674BA00E58CB9 /* snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45D40D2820F674BA00E58CB9 /* snake.cpp */; };
 		45D40D2D20F674CC00E58CB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45D40D2C20F674CC00E58CB9 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +24,6 @@
 
 /* Begin PBXFileReference section */
 		45D40D1E20F6746B00E58CB9 /* snake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = snake; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D40D2820F674BA00E58CB9 /* snake.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snake.cpp; sourceTree = "<group>"; };
-		45D40D2920F674BA00E58CB9 /* snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snake.h; sourceTree = "<group>"; };
-		45D40D2A20F674BA00E58CB9 /* snakenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snakenode.h; sourceTree = "<group>"; };
 		45D40D2C20F674CC00E58CB9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,9 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				45D40D2C20F674CC00E58CB9 /* main.cpp */,
-				45D40D2820F674BA00E58CB9 /* snake.cpp */,
-				45D40D2920F674BA00E58CB9 /* snake.h */,
-				45D40D2A20F674BA00E58CB9 /* snakenode.h */,
 			);
 			path = snake;
 			sourceTree = "<group>";
@@ -126,7 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D40D2D20F674CC00E58CB9 /* main.cpp in Sources */,
-				45D40D2B20F674BA00E58CB9 /* snake.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
